@@ -1,0 +1,796 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Poppins';
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex_space {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.primary-btn {
+  padding: 15px 40px;
+  font-family: 'Poppins';
+  background: #F6F54D;
+  font-size: 16px;
+  font-weight: 600;
+  color: #143F6B;
+}
+
+.secondary-btn {
+  padding: 15px 40px;
+  font-family: 'Poppins';
+  font-size: 16px;
+  background: none;
+  border: 2px solid white;
+  font-weight: bold;
+  color: white;
+}
+
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+
+/*--------Barra de navegación---------*/
+header {
+  height: 10vh;
+  line-height: 10vh;
+  padding: 0 20px;
+  background-color: #143F6B;
+}
+
+header button {
+  padding: 13px 40px;
+}
+
+header i {
+  margin: 0 20px;
+}
+
+header img {
+  margin: 20px 0;
+}
+
+header ul {
+  display: inline-block;
+}
+
+header ul li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+header ul li a {
+  color: #F6F54D;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+header ul li a:hover {
+  color: #fff;
+}
+
+header .navlinks span {
+  display: none;
+}
+
+@media only screen and (max-width:768px) {
+  header ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #009f7f;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    text-align: center;
+    z-index: 9;
+  }
+
+  header ul li {
+    display: block;
+  }
+
+  header ul li a {
+    color: white;
+  }
+
+  header i {
+    color: white;
+  }
+
+  header .navlinks span {
+    color: black;
+    display: block;
+    cursor: pointer;
+    line-height: 10vh;
+    font-size: 25px;
+  }
+}
+/*--------Barra de navegación---------*/
+
+/*--------Inicio---------*/
+.inicio {
+  height: 100vh;
+  color: #fff;
+}
+
+.inicio img {
+  width: 100%;
+  height: 100vh;
+}
+
+.inicio .text {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+
+.inicio .text h1 {
+  font-size: 80px;
+  font-family: 'Poppins';
+  font-weight: 800;
+}
+
+.inicio p {
+  margin: 20px 0;
+}
+
+.inicio button {
+  margin-right: 20px;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  position: absolute;
+  top: 40%;
+  height: 50px;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: #fff;
+}
+
+.owl-nav .owl-prev {
+  left: 0;
+}
+
+.owl-nav .owl-next {
+  right: 0;
+}
+/*--------Inicio---------*/
+
+/*--------Reservar---------*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+input {
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.reservas {
+  padding: 40px 0;
+  background: #143F6B;
+  color: #fff;
+}
+
+h1 {
+  font-family: 'Poppins';
+}
+
+.reservas h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.reservas h1 span {
+  color: #F6F54D;
+}
+
+.reservas input {
+  font-family: 'Poppins';
+  font-weight: 600;
+  padding: 20px;
+}
+
+.reservas input:nth-last-child(1) {
+  background: #F55353;
+  color: #F6F54D;
+  font-weight: 600;
+}
+/*--------Reservar---------*/
+
+/*--------Acerca de---------*/
+.left, .right {
+  width: 50%;
+  padding: 30px;
+}
+
+.top {
+  margin-top: 80px;
+}
+
+.mtop {
+  margin-top: 40px;
+}
+
+.heading h1 {
+  font-size: 100px;
+  font-weight: 500;
+  opacity: 0.1;
+  font-family: 'Poppins';
+  position: absolute;
+  top: -30px;
+}
+
+.heading h2 {
+  margin: 30px 0;
+  font-size: 45px;
+  font-family: 'Poppins';
+  font-weight: 400;
+}
+
+.about .heading h1 {
+  top: 55px;
+}
+
+.about {
+  position: relative;
+}
+
+.about .left {
+  margin-top: 30px;
+}
+
+.about p {
+  font-size: 15px;
+}
+
+.about button {
+  margin: 30px 0;
+}
+/*--------about---------*/
+
+/*--------counter---------*/
+
+/*--------Ofertas---------*/
+.ofertas {
+  position: relative;
+  font-family: 'Poppins';
+}
+
+.ofertas .text {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: none;
+  padding: 30px;
+}
+
+.ofertas i {
+  font-size: 12px;
+  color: #fbb234;
+  margin: 15px 0;
+  margin-right: 5px;
+}
+
+.ofertas p {
+  margin: 20px 0;
+  opacity: 0.7;
+}
+
+.ofertas h3 {
+  font-size: 30px;
+  line-height: 20px;
+  margin-left: 20px;
+  font-weight: 500;
+  color: #F55353;
+}
+
+.ofertas h3 span {
+  font-size: 15px;
+  font-weight: 400;
+  color: #143F6B;
+}
+
+.owl-carousel1 .owl-nav .owl-prev,
+.owl-carousel1 .owl-nav .owl-next {
+  position: absolute;
+  top: -20%;
+  height: 50px;
+  width: 50px;
+  background: #143F6B !important;
+}
+
+.owl-carousel1 .owl-nav .owl-prev i,
+.owl-carousel1 .owl-nav .owl-next i {
+  color: #fff;
+}
+
+.owl-carousel1 .owl-nav .owl-prev {
+  left: 90%;
+}
+
+.owl-carousel1 .owl-nav .owl-next {
+  right: 0;
+}
+
+/*--------ofertas---------*/
+/*--------populares---------*/
+.populares {
+  position: relative;
+}
+
+.populares img {
+  width: 100%;
+  height: 100%;
+}
+
+.populares .img {
+  position: relative;
+}
+
+.populares .img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #F55353;
+  width: 255px;
+  height: 255px;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.overlay {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  z-index: 3;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.populares span {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.overlay h3 {
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.populares .items:hover .overlay,
+.populares .items:hover .img::after {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.populares .owl-nav .owl-prev {
+  left: 85%;
+}
+
+.populares .owl-nav .owl-next {
+  right: 5%;
+}
+
+.populares .owl-nav .owl-next,
+.populares .owl-nav .owl-prev {
+  top: -40%;
+}
+
+/*--------populares---------*/
+/*--------services---------*/
+.services {
+  position: relative;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.services .left {
+  padding: 30px 0;
+}
+
+.services .box {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.5s;
+  padding: 20px;
+}
+
+
+
+
+.services h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20p;
+  transition: 0.5s;
+}
+
+.services img {
+  width: 100%;
+  height: 100%;
+}
+
+.services .box:hover {
+  background: #7fc142;
+  color: #fff;
+  cursor: pointer;
+}
+
+.services .box:hover i,
+.services .box:hover h3 {
+  color: #fff;
+}
+
+/*--------services---------*/
+/*--------Customer---------*/
+.Customer {
+  background-image: url("../imagenes/background-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.Customer .container {
+  max-width: 70%;
+}
+
+.Customer .item {
+  padding: 10% 0;
+}
+
+.Customer i {
+  width: 100px;
+  height: 100px;
+  background: #F55353;
+  line-height: 100px;
+  border-radius: 50%;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.Customer p {
+  line-height: 30px;
+}
+
+.Customer h3 {
+  margin-top: 20px;
+  color: #F6F54D;
+}
+
+.Customer span {
+  font-size: 15px;
+}
+
+.owl-carousel2 .owl-dots {
+  position: absolute;
+  bottom: 70px;
+  left: 46.6%;
+}
+
+.owl-carousel2 .owl-dots i {
+  color: #F6F54D;
+}
+
+.owl-carousel2 .owl-dots i:hover button {
+  color: #F6F54D !important;
+}
+
+.owl-carousel2 span {
+  border: 2px solid #fff;
+  background: transparent !important;
+}
+
+.owl-carousel2 .active span {
+  background: #F6F54D !important;
+  border: 2px solid #F6F54D;
+}
+
+/*--------Customer---------*/
+/*--------recomendado---------*/
+.recomendado {
+  position: relative;
+}
+
+.recomendado i {
+  color: #F55353;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.recomendado label {
+  margin-top: 12px;
+  margin-right: 20px;
+}
+
+.recomendado .left {
+  padding: 30px 0;
+  width: 65%;
+}
+
+.recomendado .right {
+  width: 35%;
+}
+
+.recomendado img {
+  width: 100%;
+}
+
+.recomendado .items p {
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.recomendado .box {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 40px 0;
+}
+
+.recomendado .box:nth-child(1) {
+  padding-top: 0;
+}
+
+.recomendado .box:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.recomendado .box img {
+  width: 110px;
+  height: 114px;
+}
+
+.recomendado .stext {
+  padding: 0 0 0 20px;
+}
+
+/*--------recomendado---------*/
+/*--------Contacto---------*/
+.contacto {
+  position: relative;
+}
+
+.contacto .container {
+  background: #F55353;
+  padding: 40px 30px;
+  position: absolute;
+  top: -70px;
+  left: 8%;
+  width: 100%;
+}
+
+.contacto h1 {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 800;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.contacto input {
+  padding: 20px;
+}
+
+.contacto input:nth-last-child(2) {
+  width: 80%;
+  font-family: 'Poppins';
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.contacto input:nth-last-child(1) {
+  margin-left: 20px;
+  width: 30%;
+  font-family: 'Poppins';
+  background-color: #143F6B;
+  color: #F6F54D;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*--------contacto---------*/
+/*--------footer---------*/
+footer {
+  background: #143F6B;
+  color: #fff;
+  padding: 10% 0 5% 0;
+}
+
+footer .grid {
+  grid-template-columns: 6fr 3fr 3fr;
+}
+
+footer p {
+  color: #F55353;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+footer .icon i {
+  margin: 20px 20px 20px 0;
+  color: #fff;
+}
+
+footer h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+footer li {
+  margin-bottom: 20px;
+}
+
+footer i {
+  color: #F6F54D;
+  margin: 20px 0;
+  margin-right: 20px;
+}
+
+footer label {
+  margin: 20px 0;
+}
+
+/*--------footer---------*/
+@media only screen and (max-width:768px) {
+  .inicio {
+    color: #fff;
+    height: 50vh;
+  }
+
+  .inicio img {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .reservas h1 {
+    margin-bottom: 20px;
+  }
+
+  .container.flex,
+  .reservas .flex_space {
+    flex-direction: column;
+  }
+
+  .reservas .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .counter .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .owl-carousel .owl-nav .owl-prev {
+    left: 80%;
+  }
+
+  .populares .owl-nav .owl-prev {
+    left: 75%;
+  }
+
+  .ofertas .owl-nav .owl-prev,
+  .ofertas .owl-nav .owl-next {
+    top: -30%;
+  }
+
+  .populares .owl-nav .owl-prev,
+  .populares .owl-nav .owl-next {
+    top: -80%;
+  }
+
+  .services .flex_space {
+    flex-direction: column;
+  }
+
+  .Customer {
+    height: 60vh;
+  }
+
+  .Customer .container {
+    max-width: 80%;
+  }
+
+  .owl-carousel2 .owl-dots {
+    bottom: 0;
+    left: 44.5%;
+  }
+
+  .news .content.flex {
+    flex-direction: column;
+  }
+
+  .news .left {
+    padding: 30px 0;
+    width: 100%;
+  }
+
+  .news .right {
+    width: 100%;
+  }
+
+  .contacto {
+    position: relative;
+    background: #7fc142;
+  }
+
+  .contacto .container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 30px;
+    position: relative;
+  }
+
+  .contacto .flex_space {
+    flex-direction: column;
+  }
+
+  .contacto input:nth-last-child(2) {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .contacto input:nth-last-child(1) {
+    margin: 0;
+  }
+
+  footer .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

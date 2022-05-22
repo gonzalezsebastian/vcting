@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vciting</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="/imagenes/beach.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="content flex_space">
+      <div class="logo">
+        <img src="imagenes/logo.png" alt="">
+      </div>
+      <div class="navlinks" id="">
+        <ul id="menulist">
+          <li><a href="#inicio">Inicio</a> </li>
+          <li><a href="#ofertas">Ofertas</a> </li>
+          <li><a href="#popular">Populares</a> </li>
+          <li><a href="#recomendado">Recomendados</a> </li>
+          <li><a href="#contacto">Contacto</a> </li>
+          <li><a href=""><i class="fa fa-search"></i></a></li>
+          <li><button class="primary-btn">Inicia Sesión</button></li>
+        </ul>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+    </div>
+  </header>
+
+  <script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "100vh";
+      } else {
+        menulist.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+  <section class="inicio" id="inicio">
+    <div class="content">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="imagenes/banner-1.png" alt="">
+          <div class="text">
+            <h1>Vacaciones sin complicaciones</h1>
+            <p>Con Vciting viajar por el Caribe nunca había sido tan sencillo
+            </p>
+            <div class="flex">
+              <button class="primary-btn">Descubre tu próximo destino</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="imagenes/banner-2.png" alt="">
+          <div class="text">
+            <h1>Disfruta de tu próximo destino: Cartagena</h1>
+            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+            </p>
+            <div class="flex">
+              <button class="primary-btn">Leer más</button>
+              <button class="secondary-btn">¿Necesitas Ayuda?</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="imagenes/banner-3.png" alt="">
+          <div class="text">
+            <h1>Conoce San Juan de Puerto Rico</h1>
+            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+            </p>
+            <div class="flex">
+              <button class="primary-btn">Leer más</button>
+              <button class="secondary-btn">¿Necesitas Ayuda?</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+  <section class="reservas">
+    <div class="container flex_space">
+      <div class="text">
+        <h1> <span>Consulta </span> nuestras ofertas</h1>
+      </div>
+      <div class="form">
+        <form class="grid">
+          <input type="date" placeholder="Fecha de Salida">
+          <input type="date" placeholder="Fecha de regreso">
+          <input type="number" placeholder="¿Cuántos Adultos?">
+          <input type="number" placeholder="¿Cuántos Niños?">
+          <input type="submit" value="Descubre planes para ti">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="ofertas" id="ofertas">
+    <div class="container top">
+      <div class="heading">
+        <h1>Descubre</h1>
+        <h2>Ofertas</h2>
+        <p>Adquiere una de nuestras ofertas de Verano
+        </p>
+      </div>
+
+      <div class="content mtop">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+          <div class="items">
+            <div class="image">
+              <img src="imagenes/room-1.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Conoce La Habana</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>2 días y 1 noche en una de las ciudades más especiales del mundo. Incluye estadía, alimentación y tour guíado.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">Reserva ahora</button>
+                <h3>+$2.156.990 <span> <br> *Sujeto a disponibilidad </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="imagenes/room-2.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Punta Cana</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>3 días y 2 noches en uno de los mejores hoteles en Punta Cana. Incluye estadía, alimentación y tour guíado.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">Reserva ahora</button>
+                <h3>+$1.893.640 <span> <br> *Sujeto a disponibilidad </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="imagenes/room-3.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Disfruta de La Arenosa</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>3 días y 2 noches en Barranquilla, Colombia. Incluye estadía, alimentación, tour guíado y transporte privado.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">Reserva ahora</button>
+                <h3>+$699.990 <span> <br> *Sujeto a disponibilidad </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="imagenes/room-4.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Inolvidable Curazao</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>2 días y 1 noche en una de las islas más lindas del Caribe. Incluye estadía y alimentación.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">Reserva ahora</button>
+                <h3>+$968.490 <span> <br> *Sujeto a disponibilidad </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="imagenes/room-5.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Kingston</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>3 días y 2 noches en uno de los mejores hoteles en Jamaica. Incluye estadía, alimentación y tour guíado.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">Reserva ahora</button>
+                <h3>+$1.049.990 <span> <br> *Sujeto a disponibilidad </span> </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 40,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2,
+          margin: 10,
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+  <section class="populares" id="popular">
+    <div class="container top">
+      <div class="heading">
+        <h1>Populares</h1>
+        <h2>Destinos más visitados</h2>
+        <p>Los destinos más visitados y mejor calificados por nuestros usuarios.
+      </div>
+    </div>
+
+    <div class="content mtop">
+      <div class="owl-carousel owl-carousel1 owl-theme">
+        <div class="items">
+          <div class="img">
+            <img src="imagenes/gallery-1.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Punta Cana</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="imagenes/gallery-2.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Santa Marta</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="imagenes/gallery-3.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Cuba</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="imagenes/gallery-4.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Jamaica</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="imagenes/gallery-5.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>México</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="imagenes/gallery-6.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Cancún</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="imagenes/gallery-4.png" alt="">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Puerto Rico</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 4,
+        },
+        1000: {
+          items: 6
+        }
+      }
+    })
+  </script>
+
+  <section class="recomendado" id="recomendado">
+    <div class="container">
+      <div class="heading">
+        <h1>Recomendaciones</h1>
+        <h2>Los planes más recomendados por nuestros usuarios</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </div>
+
+
+      <div class="content flex">
+        <div class="left grid2">
+          <div class="items">
+            <div class="image">
+              <img src="imagenes/blog-1.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Finibus bonorum malorm.</h2>
+              <div class="admin flex">
+                <i class="fa fa-user"></i>
+                <label>Lorem</label>
+                <i class="fa fa-heart"></i>
+                <label>100</label>
+                <i class="fa fa-comments"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="imagenes/blog-2.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Finibus bonorum malorm.</h2>
+              <div class="admin flex">
+                <i class="fa fa-user"></i>
+                <label>Dolor</label>
+                <i class="fa fa-heart"></i>
+                <label>200</label>
+                <i class="fa fa-comments"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="box flex">
+            <div class="img">
+              <img src="imagenes/blog-s1.png" alt="">
+            </div>
+            <div class="stext">
+              <h2>Sit amet</h2>
+              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+              </p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="imagenes/blog-s2.png" alt="">
+            </div>
+            <div class="stext">
+              <h2>Etiam Vel Nequ</h2>
+              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+              </p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="imagenes/blog-s3.png" alt="">
+            </div>
+            <div class="stext">
+              <h2>Etiam Vel Nequ</h2>
+              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <div class="container flex_space">
+      <h1>¿Tienes alguna duda?</h1>
+      <input type="text" placeholder="Escribe tu correo electrónico">
+      <button class="primary-btn">Enviar</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container grid">
+      <div class="box">
+        <img src="imagenes/logo.png" alt="">
+        <p>Sed tempor, ipsum ac pretium suscipit, mauris elit mattis est, aliquam volutpat nulla lectus consequat dui. Vivamus at tortor massa. Sed tempus laoreet est. Aenean eleifend, odio nec ornare gravida, magna augue tempus ante, non tempus ante felis sed sem. Quisque in ultricies ligula. Donec rhoncus vitae quam quis sollicitudin. Quisque egestas volutpat convallis. Maecenas pellentesque mattis lacinia. Curabitur convallis semper nibh, ac tincidunt dolor semper sed.</p>
+        <div class="icon">
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-youtube"></i>
+          <i class="fa fa-facebook-f"></i>
+        </div>
+      </div>
+      <div class="box">
+        <h2></h2>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h2>Contact Us</h2>
+        <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+        </p>
+        <i class="fa fa-location-dot"></i>
+        <label>Carrera 51B #93-187, Barranquilla. </label> <br>
+        <i class="fa fa-envelope"></i>
+        <label>info@vciting.com</label> <br>
+        <i class="fa fa-phone"></i>
+        <label>[+57] 123 456 7890</label> <br>
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+</html>
