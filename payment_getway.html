@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scal=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="/css/payment_style.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <title>Formas de pago</title>
+
+    </head>
+    <body>
+        <div class="principal">
+            <div class="wrapper">
+                <h2>Método de Pago</h2>
+                <form action="" method="post">
+                    <!--Información de la cuenta-->
+                    <h4>Cuenta</h4>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="text" placeholder="Nombre completo" required class="name">
+                            <i class="fa fa-user icon"></i>
+                        </div>
+                        <div class="input_box">
+                            <input type="text" placeholder="Nombre en la tarjeta" required class="name">
+                            <i class="fa fa-user icon"></i>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="email" placeholder="Correo electrónico" required class="name">
+                            <i class="fa fa-envelope icon"></i>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="text" placeholder="Dirección" required class="name">
+                            <i class="fa fa-map-marker icon" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="text" placeholder="Ciudad" required class="name">
+                            <i class="fa fa-institution icon"></i>
+                        </div>
+                    </div>
+        
+    
+                    <!--Fecha de nacimiento y género-->
+                    <div class="input_group">
+                        <div class="input_box">
+                            <h4>Fecha de nacimiento</h4>
+                            <input type="text" placeholder="DD" required class="dob">
+                            <input type="text" placeholder="MM" required class="dob">
+                            <input type="text" placeholder="AAAA" required class="dob">
+                        </div>
+                        <div class="input_box">
+                            <h4>Género</h4>
+                            <input type="radio" name="gender" class="radio" id="b1" checked>
+                            <label for="b1">Masculino</label>
+                            <input type="radio" name="gender" class="radio" id="b2">
+                            <label for="b2">Femenino</label>
+                            <input type="radio" name="gender" class="radio" id="b3">
+                            <label for="b3">Otro</label>
+                            <input type="radio" name="gender" class="radio" id="b4">
+                            <label for="b4">No indica</label>
+                        </div>
+                    </div>
+        
+        
+                    <!--Detalles de pago-->
+                    <div class="input_group">
+                        <div class="input_box">
+                            <h4>Detalles de pago</h4>
+                            <input type="radio" name="pay" class="radio" id="bc1" checked>
+                            <label for="bc1"><span>
+                                    <i class="fa fa-cc-visa"></i>Tarjeta de crédito</span></label>
+                            <input type="radio" name="pay" class="radio" id="bc2">
+                            <label for="bc2"><span>
+                                    <i class="fa fa-cc-paypal"></i>Paypal</span></label>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="tel" name="" class="name" placeholder="Número de la tarjeta" required>
+                            <i class="fa fa-credit-card icon"></i>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="tel" name="" class="name" placeholder="CVC" required>
+                            <i class="fa fa-user icon"></i>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <div class="input_box">
+                                <input type="number" placeholder="Mes Exp" required class="name">
+                                <i class="fa fa-calendar icon" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="input_box">
+                            <input type="number" placeholder="Año Exp" required class="name">
+                            <i class="fa fa-calendar-o icon" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="input_box">
+                        <input type="number" placeholder="Valor a Pagar" required class="name" disabled=False>
+                        <i class="fa fa-money icon" aria-hidden="true"></i>
+                    </div>
+        
+                    <div class="input_group">
+                        <div class="input_box">
+                            <a href="login.html"><button type="submit">Dirígete a tu Banco</button></a>
+                        </div>
+                    </div>
+        
+                </form>
+            </div>
+          
+        </div>
+    </body>
+</html>
